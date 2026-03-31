@@ -1,0 +1,270 @@
+.notices-hero {
+  background: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80")
+    center center / cover no-repeat;
+  min-height: 48vh;
+  display: flex;
+  align-items: center;
+}
+
+.notices-hero-overlay {
+  width: 100%;
+  min-height: 48vh;
+  background: linear-gradient(
+    135deg,
+    rgba(7, 35, 76, 0.88),
+    rgba(21, 101, 192, 0.72)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.notices-hero-content {
+  text-align: center;
+  color: white;
+  max-width: 900px;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.notices-hero-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.notices-hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.notice-filter-section {
+  background: #ffffff;
+  margin-top: -45px;
+  position: relative;
+  z-index: 5;
+}
+
+.notice-filter-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.notice-filter-left h2 {
+  font-size: 30px;
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.notice-filter-left p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.notice-filter-right {
+  min-width: 280px;
+}
+
+.notice-search-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d6e0f0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.notice-search-input:focus {
+  border-color: #1565c0;
+}
+
+.notices-main-section {
+  padding: 60px 0 80px;
+  background: #f8fbff;
+}
+
+.notice-list-wrap {
+  display: grid;
+  gap: 24px;
+}
+
+.notice-pro-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  background: white;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  align-items: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notice-pro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.notice-pro-date {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: white;
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px 12px;
+}
+
+.notice-pro-day {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.notice-pro-month {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.notice-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.notice-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.notice-badge.academic {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.notice-badge.routine {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.notice-badge.admission {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.notice-badge.holiday {
+  background: #fce4ec;
+  color: #ad1457;
+}
+
+.notice-published {
+  color: #777;
+  font-size: 14px;
+}
+
+.notice-pro-content h3 {
+  font-size: 26px;
+  color: #0d47a1;
+  margin-bottom: 12px;
+}
+
+.notice-pro-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.notice-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.notice-btn {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.notice-btn.primary {
+  background: #1565c0;
+  color: white;
+}
+
+.notice-btn.primary:hover {
+  background: #0d47a1;
+}
+
+.notice-btn.secondary {
+  background: #eef4ff;
+  color: #1565c0;
+}
+
+.notice-btn.secondary:hover {
+  background: #dbeafe;
+}
+
+@media (max-width: 992px) {
+  .notice-filter-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .notice-filter-right {
+    min-width: 100%;
+  }
+
+  .notices-hero-content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notices-hero-content h1 {
+    font-size: 30px;
+  }
+
+  .notices-hero-content p {
+    font-size: 16px;
+  }
+
+  .notice-filter-left h2 {
+    font-size: 24px;
+  }
+
+  .notice-pro-card {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-pro-date {
+    max-width: 140px;
+  }
+
+  .notice-pro-content h3 {
+    font-size: 21px;
+  }
+}

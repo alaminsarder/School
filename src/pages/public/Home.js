@@ -6,196 +6,287 @@ function Home() {
     React.Fragment,
     null,
 
-    // Hero Section
+    // Premium Hero
     React.createElement(
       "section",
-      { className: "hero-section" },
+      { className: "premium-hero" },
       React.createElement(
         "div",
-        { className: "hero-overlay" },
+        { className: "premium-hero-overlay" },
         React.createElement(
           "div",
-          { className: "container hero-content" },
+          { className: "container premium-hero-content" },
+          React.createElement(
+            "span",
+            { className: "hero-mini-badge" },
+            "Welcome to ABC School"
+          ),
+          React.createElement(
+            "h1",
+            null,
+            "Shaping Bright Minds for a Better Tomorrow"
+          ),
+          React.createElement(
+            "p",
+            null,
+            "ABC School is committed to academic excellence, character building, modern learning, and a safe environment where every student can grow with confidence."
+          ),
           React.createElement(
             "div",
-            { className: "hero-text" },
-            React.createElement("span", { className: "hero-badge" }, "Welcome to Our School"),
-            React.createElement("h1", null, "Building Future Leaders Through Quality Education"),
+            { className: "hero-action-group" },
             React.createElement(
-              "p",
-              null,
-              "We provide a safe, inspiring, and modern learning environment where students grow with knowledge, discipline, creativity, and strong moral values."
+              "a",
+              { href: "/admission", className: "hero-btn hero-btn-primary" },
+              "Apply for Admission"
             ),
             React.createElement(
-              "div",
-              { className: "hero-buttons" },
-              React.createElement(
-                "a",
-                { href: "/admission", className: "btn primary-btn" },
-                "Apply for Admission"
-              ),
-              React.createElement(
-                "a",
-                { href: "/about", className: "btn secondary-btn" },
-                "Explore School"
-              )
+              "a",
+              { href: "/about", className: "hero-btn hero-btn-secondary" },
+              "Discover More"
             )
           )
         )
       )
     ),
 
-    // Intro Section
+    // Highlight Strip
     React.createElement(
       "section",
-      { className: "section intro-section" },
+      { className: "highlight-strip-section" },
       React.createElement(
         "div",
-        { className: "container intro-grid" },
+        { className: "container highlight-strip" },
         React.createElement(
           "div",
-          { className: "intro-image" },
+          { className: "highlight-box" },
+          React.createElement("h3", null, "25+"),
+          React.createElement("p", null, "Years of Excellence")
+        ),
+        React.createElement(
+          "div",
+          { className: "highlight-box" },
+          React.createElement("h3", null, "1200+"),
+          React.createElement("p", null, "Active Students")
+        ),
+        React.createElement(
+          "div",
+          { className: "highlight-box" },
+          React.createElement("h3", null, "60+"),
+          React.createElement("p", null, "Qualified Teachers")
+        ),
+        React.createElement(
+          "div",
+          { className: "highlight-box" },
+          React.createElement("h3", null, "98%"),
+          React.createElement("p", null, "Success Rate")
+        )
+      )
+    ),
+
+    // About Intro
+    React.createElement(
+      "section",
+      { className: "home-section premium-about-section" },
+      React.createElement(
+        "div",
+        { className: "container premium-about-grid" },
+        React.createElement(
+          "div",
+          { className: "premium-about-image" },
           React.createElement("img", {
-            src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
-            alt: "Students in classroom",
+            src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80",
+            alt: "Students learning",
           })
         ),
         React.createElement(
           "div",
-          { className: "intro-text" },
-          React.createElement("h2", null, "A Modern School for Meaningful Learning"),
+          { className: "premium-about-text" },
+          React.createElement(
+            "span",
+            { className: "section-kicker" },
+            "About Our Institution"
+          ),
+          React.createElement("h2", null, "A Trusted Place for Meaningful Education"),
           React.createElement(
             "p",
             null,
-            "Our school is committed to academic excellence, character development, and co-curricular success. We believe every student deserves opportunities to learn, lead, and shine."
+            "We create an environment where students can learn with discipline, confidence, creativity, and strong moral values. Our focus is on helping every child become academically capable and socially responsible."
           ),
           React.createElement(
             "div",
-            { className: "intro-points" },
+            { className: "about-check-list" },
             React.createElement(
               "div",
-              { className: "point-item" },
-              React.createElement("h4", null, "Academic Excellence"),
-              React.createElement("p", null, "Strong curriculum and focused learning support.")
+              { className: "check-item" },
+              React.createElement("span", null, "✔"),
+              React.createElement("p", null, "Modern teaching approach")
             ),
             React.createElement(
               "div",
-              { className: "point-item" },
-              React.createElement("h4", null, "Safe Environment"),
-              React.createElement("p", null, "A secure, disciplined, and student-friendly campus.")
+              { className: "check-item" },
+              React.createElement("span", null, "✔"),
+              React.createElement("p", null, "Safe and disciplined environment")
+            ),
+            React.createElement(
+              "div",
+              { className: "check-item" },
+              React.createElement("span", null, "✔"),
+              React.createElement("p", null, "Focus on values and leadership")
             )
           )
         )
       )
     ),
 
-    // Feature Cards
+    // Features
     React.createElement(
       "section",
-      { className: "section features-section" },
+      { className: "home-section premium-features-section" },
       React.createElement(
         "div",
         { className: "container" },
-        React.createElement("h2", { className: "section-title" }, "Why Choose Our School"),
         React.createElement(
-          "p",
-          { className: "section-subtitle" },
-          "We prepare students for academic achievement and responsible citizenship."
+          "span",
+          { className: "section-kicker center" },
+          "Why Choose ABC School"
         ),
+        React.createElement("h2", { className: "section-title center" }, "Excellence Beyond the Classroom"),
         React.createElement(
           "div",
-          { className: "features-grid" },
+          { className: "premium-feature-grid" },
           React.createElement(
             "div",
-            { className: "feature-card" },
-            React.createElement("h3", null, "Qualified Teachers"),
+            { className: "premium-feature-card" },
+            React.createElement("h3", null, "Academic Excellence"),
             React.createElement(
               "p",
               null,
-              "Our dedicated teachers provide high-quality instruction and personal guidance."
+              "We offer a strong academic foundation with experienced teachers and a student-focused learning system."
             )
           ),
           React.createElement(
             "div",
-            { className: "feature-card" },
-            React.createElement("h3", null, "Digital Learning"),
+            { className: "premium-feature-card" },
+            React.createElement("h3", null, "Modern Facilities"),
             React.createElement(
               "p",
               null,
-              "Modern classroom practices and digital tools enhance the learning experience."
+              "Our students enjoy an inspiring learning environment with modern classrooms, labs, and library support."
             )
           ),
           React.createElement(
             "div",
-            { className: "feature-card" },
-            React.createElement("h3", null, "Discipline & Values"),
+            { className: "premium-feature-card" },
+            React.createElement("h3", null, "Character Building"),
             React.createElement(
               "p",
               null,
-              "We focus on ethics, leadership, discipline, and positive social behavior."
+              "We encourage honesty, discipline, respect, leadership, and responsibility in everyday school life."
             )
           )
         )
       )
     ),
 
-    // Principal Message
+    // Principal Section
     React.createElement(
       "section",
-      { className: "section message-section" },
+      { className: "home-section principal-premium-section" },
       React.createElement(
         "div",
-        { className: "container message-grid" },
+        { className: "container principal-premium-grid" },
         React.createElement(
           "div",
-          { className: "message-image" },
+          { className: "principal-photo-box" },
           React.createElement("img", {
-            src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
-            alt: "School discussion",
+            src: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80",
+            alt: "Principal",
           })
         ),
         React.createElement(
           "div",
-          { className: "message-box" },
-          React.createElement("h2", null, "Principal's Message"),
+          { className: "principal-message-box" },
+          React.createElement(
+            "span",
+            { className: "section-kicker" },
+            "Leadership Message"
+          ),
+          React.createElement("h2", null, "Message from the Principal"),
           React.createElement(
             "p",
             null,
-            "Welcome to our official school website. Our mission is to provide meaningful education that inspires confidence, creativity, and lifelong learning. We work together to help each student achieve his or her full potential."
+            "At ABC School, we believe education is not only about academic achievement but also about developing values, vision, and responsibility. We are proud to guide our students toward a bright and successful future."
           ),
-          React.createElement("a", { href: "/about", className: "read-more-btn" }, "Read More")
+          React.createElement(
+            "a",
+            { href: "/about", className: "read-btn" },
+            "Read Full Message"
+          )
         )
       )
     ),
 
-    // Notice Section
+    // Notice Preview
     React.createElement(
       "section",
-      { className: "section notice-section" },
+      { className: "home-section notice-preview-section" },
       React.createElement(
         "div",
         { className: "container" },
-        React.createElement("h2", { className: "section-title" }, "Latest Notices"),
         React.createElement(
           "div",
-          { className: "notice-list" },
+          { className: "section-head-flex" },
           React.createElement(
             "div",
-            { className: "notice-item" },
-            React.createElement("span", { className: "notice-date" }, "30 Mar 2026"),
-            React.createElement("p", null, "Annual Examination will begin from the first week of next month.")
+            null,
+            React.createElement(
+              "span",
+              { className: "section-kicker" },
+              "Notice Board"
+            ),
+            React.createElement("h2", { className: "section-title left" }, "Latest Notices")
+          ),
+          React.createElement(
+            "a",
+            { href: "/notices", className: "view-all-link" },
+            "View All"
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "notice-preview-grid" },
+          React.createElement(
+            "div",
+            { className: "notice-preview-card" },
+            React.createElement("span", { className: "notice-date-pill" }, "30 Mar 2026"),
+            React.createElement("h3", null, "Annual Examination Schedule Published"),
+            React.createElement(
+              "p",
+              null,
+              "The examination schedule has been published for all classes. Students are requested to follow the academic instructions."
+            )
           ),
           React.createElement(
             "div",
-            { className: "notice-item" },
-            React.createElement("span", { className: "notice-date" }, "28 Mar 2026"),
-            React.createElement("p", null, "Updated class routine has been published for all classes.")
+            { className: "notice-preview-card" },
+            React.createElement("span", { className: "notice-date-pill" }, "28 Mar 2026"),
+            React.createElement("h3", null, "Updated Class Routine Available"),
+            React.createElement(
+              "p",
+              null,
+              "A revised class routine has been issued for all students. Please check the updated academic routine carefully."
+            )
           ),
           React.createElement(
             "div",
-            { className: "notice-item" },
-            React.createElement("span", { className: "notice-date" }, "25 Mar 2026"),
-            React.createElement("p", null, "Admission is now open for the upcoming academic session.")
+            { className: "notice-preview-card" },
+            React.createElement("span", { className: "notice-date-pill" }, "25 Mar 2026"),
+            React.createElement("h3", null, "Admission Open for New Session"),
+            React.createElement(
+              "p",
+              null,
+              "Admission is open for the next academic session. Guardians are encouraged to collect the application form soon."
+            )
           )
         )
       )
@@ -204,60 +295,52 @@ function Home() {
     // Gallery Preview
     React.createElement(
       "section",
-      { className: "section gallery-preview-section" },
+      { className: "home-section gallery-preview-section" },
       React.createElement(
         "div",
         { className: "container" },
-        React.createElement("h2", { className: "section-title" }, "Campus Life"),
+        React.createElement(
+          "span",
+          { className: "section-kicker center" },
+          "School Life"
+        ),
+        React.createElement("h2", { className: "section-title center" }, "Moments from Our Campus"),
         React.createElement(
           "div",
-          { className: "gallery-grid" },
+          { className: "gallery-preview-grid" },
           React.createElement("img", {
             src: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
-            alt: "Students in school",
+            alt: "Students",
           }),
           React.createElement("img", {
-            src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
-            alt: "Student group",
+            src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+            alt: "School discussion",
           }),
           React.createElement("img", {
-            src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80",
-            alt: "Graduation students",
+            src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80",
+            alt: "Classroom",
           })
         )
       )
     ),
 
-    // Stats
+    // CTA Section
     React.createElement(
       "section",
-      { className: "section stats-section" },
+      { className: "home-cta-section" },
       React.createElement(
         "div",
-        { className: "container stats-grid" },
+        { className: "container home-cta-box" },
+        React.createElement("h2", null, "Start Your Child's Journey with ABC School"),
         React.createElement(
-          "div",
-          { className: "stat-box" },
-          React.createElement("h3", null, "1200+"),
-          React.createElement("p", null, "Students")
+          "p",
+          null,
+          "Join a school community that values learning, discipline, creativity, and leadership."
         ),
         React.createElement(
-          "div",
-          { className: "stat-box" },
-          React.createElement("h3", null, "60+"),
-          React.createElement("p", null, "Teachers & Staff")
-        ),
-        React.createElement(
-          "div",
-          { className: "stat-box" },
-          React.createElement("h3", null, "25+"),
-          React.createElement("p", null, "Years of Excellence")
-        ),
-        React.createElement(
-          "div",
-          { className: "stat-box" },
-          React.createElement("h3", null, "98%"),
-          React.createElement("p", null, "Success Rate")
+          "a",
+          { href: "/admission", className: "cta-main-btn" },
+          "Apply Now"
         )
       )
     )
