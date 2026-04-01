@@ -6,7 +6,6 @@ function Login() {
     React.Fragment,
     null,
 
-    // Banner
     React.createElement(
       "section",
       { className: "login-banner" },
@@ -26,7 +25,6 @@ function Login() {
       )
     ),
 
-    // Login Section
     React.createElement(
       "section",
       { className: "login-section" },
@@ -34,7 +32,6 @@ function Login() {
         "div",
         { className: "container login-grid" },
 
-        // Left Info
         React.createElement(
           "div",
           { className: "login-info-box" },
@@ -49,25 +46,36 @@ function Login() {
             "div",
             { className: "login-feature" },
             React.createElement("h4", null, "Student Access"),
-            React.createElement("p", null, "Check notices, class information, and academic activities.")
+            React.createElement(
+              "p",
+              null,
+              "Check notices, class information, and academic activities."
+            )
           ),
 
           React.createElement(
             "div",
             { className: "login-feature" },
             React.createElement("h4", null, "Teacher Access"),
-            React.createElement("p", null, "Manage classes, student records, and educational resources.")
+            React.createElement(
+              "p",
+              null,
+              "Manage classes, student records, and educational resources."
+            )
           ),
 
           React.createElement(
             "div",
             { className: "login-feature" },
             React.createElement("h4", null, "Parent Access"),
-            React.createElement("p", null, "Stay informed about your child’s academic progress and school updates.")
+            React.createElement(
+              "p",
+              null,
+              "Stay informed about your child's academic progress and school updates."
+            )
           )
         ),
 
-        // Right Form
         React.createElement(
           "div",
           { className: "login-form-box" },
@@ -111,11 +119,7 @@ function Login() {
                 React.createElement("input", { type: "checkbox" }),
                 React.createElement("span", null, "Remember me")
               ),
-              React.createElement(
-                "a",
-                { href: "#" },
-                "Forgot Password?"
-              )
+              React.createElement("a", { href: "#" }, "Forgot Password?")
             ),
 
             React.createElement(

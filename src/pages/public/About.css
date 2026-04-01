@@ -1,194 +1,275 @@
-.about-banner {
+.about-premium-hero {
   background: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80")
     center center / cover no-repeat;
-  min-height: 45vh;
-  position: relative;
+  min-height: 52vh;
   display: flex;
   align-items: center;
 }
 
-.about-banner-overlay {
+.about-premium-overlay {
   width: 100%;
-  min-height: 45vh;
-  background: rgba(8, 34, 74, 0.72);
+  min-height: 52vh;
+  background: linear-gradient(
+    135deg,
+    rgba(7, 35, 76, 0.86),
+    rgba(21, 101, 192, 0.7)
+  );
   display: flex;
   align-items: center;
 }
 
-.about-banner-content {
+.about-premium-hero-content {
   text-align: center;
   color: white;
+  max-width: 900px;
 }
 
-.about-banner-content h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.about-hero-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 18px;
+  font-size: 14px;
 }
 
-.about-banner-content p {
+.about-premium-hero-content h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.about-premium-hero-content p {
   font-size: 18px;
-  max-width: 750px;
+  line-height: 1.8;
+  max-width: 760px;
   margin: 0 auto;
-  line-height: 1.7;
 }
 
-.about-section {
-  padding: 80px 0;
+.about-premium-section {
+  padding: 85px 0;
 }
 
-.light-bg {
+.about-light-bg {
   background: #f8fbff;
 }
 
-.about-grid {
+.section-heading.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-kicker {
+  display: inline-block;
+  color: #1565c0;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-kicker.center {
+  display: block;
+  text-align: center;
+}
+
+.section-kicker.white {
+  color: #dbeafe;
+}
+
+.section-title {
+  font-size: 40px;
+  color: #0d47a1;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.white {
+  color: white;
+}
+
+.about-story-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: 45px;
   align-items: center;
 }
 
-.about-image img {
+.about-story-image img {
   width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.1);
 }
 
-.about-text h2 {
-  font-size: 34px;
+.about-story-text h2 {
+  font-size: 40px;
   color: #0d47a1;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.about-text p {
+.about-story-text p {
   color: #555;
+  line-height: 1.9;
   font-size: 17px;
-  line-height: 1.8;
   margin-bottom: 16px;
 }
 
-.mission-vision-grid {
+.mission-vision-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 28px;
 }
 
-.mv-box {
+.mv-premium-card {
   background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid #1565c0;
+  padding: 34px 28px;
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #1565c0;
 }
 
-.mv-box h3 {
+.mv-premium-card h3 {
+  font-size: 28px;
   color: #0d47a1;
-  font-size: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
-.mv-box p {
+.mv-premium-card p {
+  color: #555;
+  line-height: 1.9;
+}
+
+.values-premium-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.value-premium-card {
+  background: white;
+  padding: 28px 24px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.value-premium-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-premium-card h4 {
+  font-size: 24px;
+  color: #0d47a1;
+  margin-bottom: 12px;
+}
+
+.value-premium-card p {
   color: #555;
   line-height: 1.8;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  color: #0d47a1;
-  margin-bottom: 40px;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.value-card {
-  background: white;
-  padding: 28px 22px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-}
-
-.value-card h4 {
-  font-size: 22px;
-  color: #0d47a1;
-  margin-bottom: 10px;
-}
-
-.value-card p {
-  color: #555;
-  line-height: 1.7;
-}
-
-.achievements-section {
+.about-premium-achievement-section {
+  padding: 85px 0;
   background: linear-gradient(135deg, #0d47a1, #1565c0);
 }
 
-.achievements-grid {
+.achievement-premium-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 24px;
 }
 
-.achievement-box {
-  text-align: center;
+.achievement-premium-box {
   background: rgba(255, 255, 255, 0.12);
   color: white;
+  text-align: center;
   padding: 35px 20px;
-  border-radius: 14px;
+  border-radius: 18px;
 }
 
-.achievement-box h3 {
-  font-size: 36px;
+.achievement-premium-box h3 {
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
-.achievement-box p {
+.achievement-premium-box p {
   font-size: 16px;
 }
 
+.about-premium-cta {
+  padding: 90px 0;
+}
+
+.about-cta-box {
+  background: #f8fbff;
+  border-radius: 22px;
+  text-align: center;
+  padding: 55px 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.about-cta-box h2 {
+  font-size: 38px;
+  color: #0d47a1;
+  margin-bottom: 14px;
+}
+
+.about-cta-box p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.about-cta-btn {
+  display: inline-block;
+  background: #1565c0;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.about-cta-btn:hover {
+  background: #0d47a1;
+}
+
 @media (max-width: 992px) {
-  .about-grid,
-  .mission-vision-grid,
-  .values-grid,
-  .achievements-grid {
+  .about-story-grid,
+  .mission-vision-cards,
+  .values-premium-grid,
+  .achievement-premium-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-banner-content h1 {
-    font-size: 38px;
+  .about-premium-hero-content h1 {
+    font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-grid,
-  .mission-vision-grid,
-  .values-grid,
-  .achievements-grid {
+  .about-story-grid,
+  .mission-vision-cards,
+  .values-premium-grid,
+  .achievement-premium-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-banner-content h1 {
+  .about-premium-hero-content h1 {
     font-size: 30px;
   }
 
-  .about-banner-content p {
+  .about-premium-hero-content p {
     font-size: 16px;
   }
 
-  .about-text h2 {
-    font-size: 28px;
-  }
-
-  .section-title {
+  .section-title,
+  .about-story-text h2,
+  .about-cta-box h2 {
     font-size: 28px;
   }
 }
